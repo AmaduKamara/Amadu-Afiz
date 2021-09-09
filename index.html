@@ -1,16 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
-   <h1>Hello World, we are software developers!</h1>
-    
-    <script  src="js/index.js"></script>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">
+      Thank you for taking the time to help us improve the platform
+    </p>
+    <form action="" id="survey-form">
+      <div>
+        <label id="name-label" for="name">Name</label>
+        <input type="text" id="name" required placeholder="Enter your name" />
+      </div>
+      <div>
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          id="email"
+          required
+          placeholder="Enter your email"
+        />
+      </div>
+      <div>
+        <label id="number-label" for="number">Age(optional)</label>
+        <input type="number" id="number" min="10" max="99" placeholder="Age" />
+      </div>
+      <div>
+        <label for="">Which option best describes your current role?</label>
+        <select id="dropdown">
+          <option>Select your role</option>
+          <option value="role">Student</option>
+          <option value="role">Full Time Job</option>
+          <option value="role">Full Time Learner</option>
+          <option value="role">Full Time Learner</option>
+          <option value="role">Prefer not to say</option>
+          <option value="role">Other</option>
+        </select>
+      </div>
+      <div>
+        <p>Would you recommend freeCodeCamp to a friend?</p>
+        <div>
+          <input type="radio" id="definitely" name="name" value="definitely" />
+          <label for="definitely">Definitely</label>
+        </div>
+        <div>
+          <input type="radio" id="maybe" name="name" value="maybe" />
+          <label for="maybe">Maybe</label>
+        </div>
+        <div>
+          <input type="radio" id="notsure" name="name" value="notsure" />
+          <label for="notsure">Not sure</label>
+        </div>
+      </div>
+      <div>
+        <p>What is your favorite feature of freeCodeCamp?</p>
+      </div>
+    </form>
+
+    <script src="js/index.js"></script>
   </body>
 </html>
